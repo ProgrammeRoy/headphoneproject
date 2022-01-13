@@ -87,8 +87,16 @@ img {
 
 .header {
     background-color: var(--black);
-    padding: calc(var(--distance)*3) 0;
+    padding: var(--distance);
     color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .header {
+        background-color: var(--black);
+        padding: calc(var(--distance)*3) 0;
+        color: var(--white);
+    }
 }
 
 @media (min-width:768px) {
@@ -342,7 +350,13 @@ img {
 }
 
 .model-z .price {
-    font-size: 6rem;
+    font-size: 5rem;
+}
+
+@media (min-width: 768px) {
+    .model-z .price {
+        font-size: 6rem;
+    }
 }
 
 .newsletter {
